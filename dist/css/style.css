@@ -639,7 +639,6 @@ h3 b {
 .hero__container {
   min-height: 100vh;
   min-height: 100svh;
-  height: calc(100% - 94px);
   padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
@@ -721,14 +720,6 @@ h3 b {
 .hero__right {
   display: flex;
   align-items: center
-}
-.thanks {
-  min-height: 100vh;
-  min-height: 100svh
-}
-.thanks .hero__container {
-  min-height: 100vh;
-  min-height: 100svh
 }
 .company {
   background-color: #f9f9f8;
@@ -3220,6 +3211,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     padding-top: 11.25rem
   }
   .hero {
+    min-height: calc(100vh + 9.375rem);
+    min-height: calc(100svh + 9.375rem);
     margin-top: -9.375rem
   }
 }
