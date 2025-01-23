@@ -3217,11 +3217,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     height: 8.75rem
   }
   .hero__container {
-    min-height: auto;
     padding-top: 11.25rem
   }
   .hero {
-    min-height: auto;
     margin-top: -9.375rem
   }
 }
