@@ -526,13 +526,42 @@ body::after {
 h3 {
   font-weight: 700;
   line-height: 120%;
-  letter-spacing: -.04em
+  letter-spacing: -.04em;
+  opacity: 0
+}
+h3.animation {
+  -webkit-animation: top .2s .6s linear both;
+  animation: top .2s .6s linear both
 }
 h3 span {
   color: rgba(255,255,255,.6392156863)
 }
 h3 b {
   color: rgba(42,44,47,.6392156863)
+}
+@-webkit-keyframes top {
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1
+  }
+}
+@keyframes top {
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1
+  }
 }
 .header {
   width: 100%;
@@ -661,7 +690,12 @@ h3 b {
 }
 .hero__text p {
   font-weight: 400;
-  line-height: 140%
+  line-height: 140%;
+  opacity: 0
+}
+.hero__text p.animation {
+  -webkit-animation: top .2s 1s linear both;
+  animation: top .2s 1s linear both
 }
 .hero__content {
   width: 100%;
@@ -675,12 +709,22 @@ h3 b {
 }
 .hero__content>p {
   font-weight: 400;
-  line-height: 140%
+  line-height: 140%;
+  opacity: 0
+}
+.hero__content>p.animation {
+  -webkit-animation: top .2s .1s linear both;
+  animation: top .2s .1s linear both
 }
 .hero__content h1 {
   font-weight: 700;
   line-height: 90%;
-  letter-spacing: -.04em
+  letter-spacing: -.04em;
+  opacity: 0
+}
+.hero__content h1.animation {
+  -webkit-animation: top .2s .3s linear both;
+  animation: top .2s .3s linear both
 }
 .hero__content>a {
   margin-top: 2.5rem;
@@ -713,7 +757,8 @@ h3 b {
 .hero__item {
   display: flex;
   align-items: center;
-  gap: .75rem
+  gap: .75rem;
+  opacity: 0
 }
 .hero__item>img,
 .hero__item>picture {
@@ -730,6 +775,18 @@ h3 b {
   line-height: 120%;
   letter-spacing: -.04em;
   color: #fff
+}
+.hero__item:nth-child(1).animation {
+  -webkit-animation: top .2s .4s linear both;
+  animation: top .2s .4s linear both
+}
+.hero__item:nth-child(2).animation {
+  -webkit-animation: top .2s .5s linear both;
+  animation: top .2s .5s linear both
+}
+.hero__item:nth-child(3).animation {
+  -webkit-animation: top .2s .6s linear both;
+  animation: top .2s .6s linear both
 }
 .hero__right {
   display: flex;
@@ -748,7 +805,12 @@ h3 b {
   letter-spacing: -.04em;
   display: block;
   width: 100%;
-  max-width: 68.75rem
+  max-width: 68.75rem;
+  opacity: 0
+}
+.company__container h2.animation {
+  -webkit-animation: top .2s .2s linear both;
+  animation: top .2s .2s linear both
 }
 .company__container h2 span {
   color: rgba(42,44,47,.6392156863)
@@ -789,7 +851,12 @@ h3 b {
   line-height: 120%;
   letter-spacing: -.04em;
   color: #2a2c2f;
-  font-size: 1.125rem
+  font-size: 1.125rem;
+  opacity: 0
+}
+.spec__left.animation {
+  -webkit-animation: top .2s .4s linear both;
+  animation: top .2s .4s linear both
 }
 .spec__center {
   width: 100%;
@@ -821,7 +888,12 @@ h3 b {
   width: 100%;
   max-width: 20rem;
   min-width: 20rem;
-  font-size: 1.125rem
+  font-size: 1.125rem;
+  opacity: 0
+}
+.spec__right.animation {
+  -webkit-animation: top .2s .6s linear both;
+  animation: top .2s .6s linear both
 }
 .spec__right p {
   font-weight: 700;
@@ -899,7 +971,8 @@ h3 b {
 .pumps__item {
   display: flex;
   flex-direction: column;
-  gap: 1rem
+  gap: 1rem;
+  opacity: 0
 }
 .pumps__item h4 {
   font-weight: 700;
@@ -907,6 +980,18 @@ h3 b {
   line-height: 120%;
   letter-spacing: -.04em;
   color: #fff
+}
+.pumps__item:nth-child(1).animation {
+  -webkit-animation: top .2s .4s linear both;
+  animation: top .2s .4s linear both
+}
+.pumps__item:nth-child(2).animation {
+  -webkit-animation: top .2s .6s linear both;
+  animation: top .2s .6s linear both
+}
+.pumps__item:nth-child(3).animation {
+  -webkit-animation: top .2s .8s linear both;
+  animation: top .2s .8s linear both
 }
 .pumps__img {
   background-color: #fff;
@@ -937,7 +1022,12 @@ h3 b {
   font-weight: 400;
   font-size: 1rem;
   line-height: 160%;
-  color: #2a2c2f
+  color: #2a2c2f;
+  opacity: 0
+}
+.power__container p.animation {
+  -webkit-animation: top .2s .5s linear both;
+  animation: top .2s .5s linear both
 }
 .power__items {
   display: grid;
@@ -946,7 +1036,8 @@ h3 b {
 }
 .power__item {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  opacity: 0
 }
 .power__item h4 {
   font-weight: 400;
@@ -975,6 +1066,18 @@ h3 b {
   background-color: #686d4d;
   border: 1px solid #686d4d;
   transition: all .3s ease 0s
+}
+.power__item:nth-child(1).animation {
+  -webkit-animation: top .2s .4s linear both;
+  animation: top .2s .4s linear both
+}
+.power__item:nth-child(2).animation {
+  -webkit-animation: top .2s .6s linear both;
+  animation: top .2s .6s linear both
+}
+.power__item:nth-child(3).animation {
+  -webkit-animation: top .2s .8s linear both;
+  animation: top .2s .8s linear both
 }
 .power__img {
   aspect-ratio: 400/240;
@@ -1013,13 +1116,23 @@ h3 b {
   font-weight: 700;
   line-height: 120%;
   letter-spacing: -.04em;
-  color: #fff
+  color: #fff;
+  opacity: 0
+}
+.selection__text h2.animation {
+  -webkit-animation: top .2s .4s linear both;
+  animation: top .2s .4s linear both
 }
 .selection__text p {
   font-weight: 400;
   font-size: 1rem;
   line-height: 160%;
-  color: #fff
+  color: #fff;
+  opacity: 0
+}
+.selection__text p.animation {
+  -webkit-animation: top .2s .6s linear both;
+  animation: top .2s .6s linear both
 }
 .selection__form {
   padding: 3rem 2rem;
@@ -1164,12 +1277,22 @@ h3 b {
 .sale__left h5 {
   font-weight: 700;
   line-height: 120%;
-  letter-spacing: -.04em
+  letter-spacing: -.04em;
+  opacity: 0
+}
+.sale__left h5.animation {
+  -webkit-animation: top .2s .4s linear both;
+  animation: top .2s .4s linear both
 }
 .sale__left p {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 160%
+  line-height: 160%;
+  opacity: 0
+}
+.sale__left p.animation {
+  -webkit-animation: top .2s .6s linear both;
+  animation: top .2s .6s linear both
 }
 .sale button {
   display: flex;
@@ -1180,7 +1303,12 @@ h3 b {
   border-radius: 6.25rem;
   border: 1px solid #fff;
   transition: all .3s ease 0s;
-  white-space: nowrap
+  white-space: nowrap;
+  opacity: 0
+}
+.sale button.animation {
+  -webkit-animation: top .2s .8s linear both;
+  animation: top .2s .8s linear both
 }
 .delivery__container {
   position: relative;
@@ -1255,7 +1383,12 @@ h3 b {
   width: 100%;
   max-width: 20rem;
   min-width: 20rem;
-  font-size: 1.125rem
+  font-size: 1.125rem;
+  opacity: 0
+}
+.delivery__right.animation {
+  -webkit-animation: top .2s .8s linear both;
+  animation: top .2s .8s linear both
 }
 .delivery__right p {
   font-weight: 400;
@@ -1276,7 +1409,12 @@ h3 b {
 }
 .avtonom__container p {
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem
+  margin-bottom: 1.5rem;
+  opacity: 0
+}
+.avtonom__container p.animation {
+  -webkit-animation: top .2s .6s linear both;
+  animation: top .2s .6s linear both
 }
 .avtonom button {
   display: flex;
@@ -1288,7 +1426,12 @@ h3 b {
   border: 1px solid #686d4d;
   transition: all .3s ease 0s;
   white-space: nowrap;
-  color: #fff
+  color: #fff;
+  opacity: 0
+}
+.avtonom button.animation {
+  -webkit-animation: top .2s .8s linear both;
+  animation: top .2s .8s linear both
 }
 .question__container {
   padding-bottom: 1.5rem
@@ -1307,13 +1450,23 @@ h3 b {
   line-height: 120%;
   letter-spacing: -.04em;
   color: #fff;
-  margin-bottom: 1rem
+  margin-bottom: 1rem;
+  opacity: 0
+}
+.question__content h4.animation {
+  -webkit-animation: top .2s .4s linear both;
+  animation: top .2s .4s linear both
 }
 .question__content p {
   font-weight: 400;
   font-size: 1rem;
   line-height: 160%;
-  color: #fff
+  color: #fff;
+  opacity: 0
+}
+.question__content p.animation {
+  -webkit-animation: top .2s .6s linear both;
+  animation: top .2s .6s linear both
 }
 .question__content button {
   display: flex;
@@ -1325,7 +1478,12 @@ h3 b {
   border: 1px solid #fff;
   transition: all .3s ease 0s;
   white-space: nowrap;
-  color: #686d4d
+  color: #686d4d;
+  opacity: 0
+}
+.question__content button.animation {
+  -webkit-animation: top .2s .8s linear both;
+  animation: top .2s .8s linear both
 }
 .map__content {
   width: 100%;
